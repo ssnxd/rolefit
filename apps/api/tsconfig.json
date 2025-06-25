@@ -1,0 +1,17 @@
+{
+  "extends": "@repo/typescript-config/nodejs.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node10",
+    "outDir": "./dist",
+    "rootDir": "./"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
