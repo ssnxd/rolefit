@@ -1,10 +1,10 @@
-import { createTRPCClient, httpBatchLink } from '@trpc/client';
-import type { AppRouter } from '@repo/api';
-   
+import { createTRPCClient, httpLink } from "@trpc/client";
+import type { AppRouter } from "@repo/api";
+
 const trpc = createTRPCClient<AppRouter>({
   links: [
-    httpBatchLink({
-      url: 'http://localhost:3001',
+    httpLink({
+      url: process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001",
     }),
   ],
 });
