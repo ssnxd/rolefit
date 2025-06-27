@@ -2,8 +2,7 @@
   "name": "@repo/api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
+  "main": "./dist/index.js",
   "scripts": {
     "dev": "tsx watch index.ts",
     "build": "tsc",
