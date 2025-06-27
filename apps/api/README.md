@@ -11,15 +11,18 @@ Analyzes a candidate's CV against a job description and returns a comprehensive 
 **Request Format:** `multipart/form-data`
 
 **Parameters:**
+
 - `cv` (File): PDF file containing the candidate's CV/resume
 - `jd` (File): PDF file containing the job description
 
 **File Requirements:**
+
 - Format: PDF only
 - Maximum size: 5MB per file
 - Both files are required
 
 **Response:**
+
 ```typescript
 {
   ok: boolean;

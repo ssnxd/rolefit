@@ -1,6 +1,6 @@
 /**
  * RoleFit API Server
- * 
+ *
  * This is the main entry point for the RoleFit API server that analyzes
  * CVs/resumes against job descriptions using AI evaluation.
  */
@@ -38,18 +38,18 @@ const pdfFileSchema = zfd
 export const appRouter = router({
   /**
    * Analyze endpoint - Main functionality for CV/Resume analysis
-   * 
+   *
    * Accepts two PDF files:
    * - cv: The candidate's CV/resume file
    * - jd: The job description file
-   * 
+   *
    * Returns an evaluation result comparing the CV against the job requirements
    */
   analyze: publicProcedure
     .input(
       zfd.formData({
-        cv: pdfFileSchema,  // CV/Resume PDF file
-        jd: pdfFileSchema,  // Job Description PDF file
+        cv: pdfFileSchema, // CV/Resume PDF file
+        jd: pdfFileSchema, // Job Description PDF file
       }),
     )
     .mutation(async (opts) => {
@@ -80,7 +80,7 @@ export const appRouter = router({
  */
 const server = createHTTPServer({
   middleware: cors(), // Enable CORS for cross-origin requests
-  router: appRouter,  // Attach our tRPC router
+  router: appRouter, // Attach our tRPC router
 });
 
 /**

@@ -35,7 +35,7 @@
   },
   "exports": {
     ".": {
-      "types": "./types.ts"
+      "types": "./src/types.ts"
     }
   }
 }
