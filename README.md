@@ -2,6 +2,18 @@
 
 AI-powered tool that analyzes a candidate's CV against a job description to assess alignment, strengths, and improvement areas. The current state of the project supports comparing job descriptions to CVs and generating comprehensive reports.
 
+Live version: [rolefit.surajnegi.com](https://rolefit.surajnegi.com)
+
+⚠️ Note: The api is running on free versions on render so the inital api request might take a while after inactivity. 
+
+## Screenshots
+
+<img width="500" align="top" alt="image" src="https://github.com/user-attachments/assets/cb88591d-f9d1-49cc-8cae-3dbbf7fbd64a" />
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/8048516e-4e04-4a0a-84a5-e958c84a5060" />
+
+
+
 ## Project Setup
 
 This project uses Turbo for monorepo management and pnpm for package management. All deployable applications live in the `apps` directory and shared packages are located in the `packages` directory.
