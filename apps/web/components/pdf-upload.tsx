@@ -163,7 +163,7 @@ export default function PDFUpload() {
       // Call tRPC endpoint for analysis
       const response = (await trpc.analyze.mutate(
         formData,
-      )) as AnalysisResponse;
+      ));
 
       // Handle successful response
       if (response.ok && response.result) {

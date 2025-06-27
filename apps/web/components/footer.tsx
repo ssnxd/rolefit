@@ -34,7 +34,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="font-semibold text-gray-900 hover:text-blue-600 transition-colors duration-200"
               >
-                Woolf
+                woolf.university
               </a>{" "}
               by{" "}
               <a
@@ -43,11 +43,11 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="font-semibold text-gray-900 hover:text-blue-600 transition-colors duration-200"
               >
-                Suraj Singh Negi
+                Suraj Negi
               </a>{" "}
               for{" "}
               <span className="font-semibold text-gray-900">
-                Full Stack Developer
+                Full-Stack Engineer
               </span>{" "}
               role
             </p>
